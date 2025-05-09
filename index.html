@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menú Tulio Sanchez Farrera</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    user-select: none;
+    border-bottom: 2px solid #222;
+  }
+  .menu {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+  }
+  .menu button {
+    background-color: #111;
+    border: 2px solid #444;
+    border-radius: 12px;
+    width: 200px;
+    height: 220px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  .menu button:hover,
+  .menu button:focus {
+    background-color: #222;
+    border-color: #0ff;
+    outline: none;
+  }
+  .menu button img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>Tulio Sanchez Farrera</header>
+
+<div class="menu">
+  <button type="button" aria-label="GATO" id="gato-btn">
+    <img src="https://media.istockphoto.com/id/1365567894/es/vector/juego-de-tic-tac-de-punta-vectorial-dibujado-a-mano-boceto-de-garabatos-de-noughts-and.jpg?s=612x612&w=0&k=20&c=Eisl_s3-BvfsDD2bFMFpgSQwQKL8brXIFOtZ439g8qU=" alt="Imagen del juego GATO" />
+    GATO
+  </button>
+ 
+</div>
+<script>
+  document.getElementById('gato-btn').addEventListener('click', function() {
+    window.location.href = '../proyecto/gato/index.html'; // Cambia esto por la URL de destino
+  });
+</script>
+
+
+</body>
+</html>
